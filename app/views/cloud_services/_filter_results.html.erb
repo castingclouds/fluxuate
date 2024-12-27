@@ -1,0 +1,57 @@
+<%= turbo_frame_tag "cloud-services-table" do %>
+  <table class="min-w-full">
+    <thead class="bg-gray-100">
+      <tr>
+        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Provider</th>
+        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Service Name</th>
+        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Category</th>
+        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      <% cloud_services.each do |service| %>
+        <tr class="hover:bg-gray-50">
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900"><%= service.service_provider %></td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900"><%= service.service_name %></td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900"><%= service.service_category %></td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+            <%= link_to 'View', cloud_service_path(service), class: 'text-blue-600 hover:text-blue-900 mr-3' %>
+            <%= link_to 'Edit', edit_cloud_service_path(service), class: 'text-indigo-600 hover:text-indigo-900 mr-3' %>
+            <%= link_to 'Delete', cloud_service_path(service), 
+                method: :delete, 
+                data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, 
+                class: 'text-red-600 hover:text-red-900' %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
+
+<%= turbo_frame_tag "service-counts" do %>
+  <div class="space-y-4">
+    <div>
+      <h3 class="font-medium text-gray-700 mb-2">By Provider</h3>
+      <ul class="space-y-1">
+        <% provider_counts.each do |provider, count| %>
+          <li class="flex justify-between items-center text-sm">
+            <span><%= provider %></span>
+            <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full"><%= count %></span>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-medium text-gray-700 mb-2">By Category</h3>
+      <ul class="space-y-1">
+        <% category_counts.each do |category, count| %>
+          <li class="flex justify-between items-center text-sm">
+            <span><%= category %></span>
+            <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full"><%= count %></span>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,6 @@
+﻿"","AWS","Azure","Google Cloud"
+"Archival storage","Amazon Simple Storage Service (S3) Glacier Instant Retrieval, Amazon S3 Glacier Flexible Retrieval, Amazon S3 Glacier Deep Archive","Azure Archive Storage","Archive storage in Cloud Storage"
+"Backup","AWS Backup, AWS Resilience Hub","Azure Backup","Backup and DR Service"
+"Block storage","Amazon Elastic Block Store (EBS)","Azure Disk Storage","Persistent Disk, Local solid-state drive (SSD) disks, Google Cloud Hyperdisk"
+"File storage","Amazon Elastic File System (EFS), Amazon FSx","Avere vFXT for Azure, Azure Files, Azure NetApp Files, Azure FXT Edge Filer","Filestore"
+"Object storage","Amazon S3","Azure Blob Storage","Cloud Storage, Cloud Storage for Firebase"

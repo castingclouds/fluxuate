@@ -1,0 +1,6 @@
+﻿"","AWS","Azure","Google Cloud"
+"Cloud-device connections, data collection and management","AWS IoT Analytics, AWS IoT Device Management, AWS IoT Events, AWS IoT SiteWise","Azure IoT Central, Azure Sphere","Leverege Connect for Google Cloud"
+"Device security management","AWS IoT Device Defender","Microsoft Defender for IoT","N/A"
+"IoT edge compute","AWS IoT Greengrass","Azure IoT Edge","Edge TPU"
+"IoT gateway","AWS IoT Core","Azure IoT Hub","N/A"
+"Virtual modeling","AWS IoT Things Graph, AWS IoT TwinMaker","Azure Digital Twins","N/A"

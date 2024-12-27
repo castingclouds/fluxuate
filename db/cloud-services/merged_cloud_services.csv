@@ -1,0 +1,578 @@
+Service_Provider,Service_Name,Service_Category
+AWS,AWS Amplify,Dev Tools
+AWS,AWS App Mesh,App Integration
+AWS,AWS App Mesh,Networking
+AWS,AWS App Runner,Container
+AWS,AWS App2container (A2C),Container
+AWS,AWS Appconfig,Dev Tools
+AWS,AWS Appsync,App Integration
+AWS,AWS Artifact,Security
+AWS,AWS Audit Manager,Security
+AWS,AWS Auto Scaling,Compute
+AWS,AWS Backup,Storage
+AWS,AWS Batch,Compute
+AWS,AWS Budgets,Cost Controls
+AWS,AWS Certificate Manager,Security
+AWS,AWS Client VPN,Networking
+AWS,AWS Cloud Development Kit (CDK),Dev Tools
+AWS,AWS Cloud Hardware Security Module (CloudHSM),Security
+AWS,AWS Cloud Map,App Integration
+AWS,AWS Cloud Map,Networking
+AWS,AWS Cloud WAN,Networking
+AWS,AWS Cloud9,Dev Tools
+AWS,AWS Cloudformation,Management
+AWS,AWS Cloudshell,Dev Tools
+AWS,AWS Cloudtrail,Management
+AWS,AWS Codeartifact,Dev Tools
+AWS,AWS Codeartifact,Container
+AWS,AWS Codebuild,Dev Tools
+AWS,AWS Codecommit,Dev Tools
+AWS,AWS Codedeploy,Dev Tools
+AWS,AWS Codepipeline,Dev Tools
+AWS,AWS Command Line Interface (CLI),Dev Tools
+AWS,AWS Compute Optimizer,Cost Controls
+AWS,AWS Config,Management
+AWS,AWS Control Tower,Management
+AWS,AWS Copilot,Container
+AWS,AWS Cost And Usage Reports (CUR),Cost Controls
+AWS,AWS Cost Anomaly Detection,Cost Controls
+AWS,AWS Cost Explorer,Cost Controls
+AWS,AWS Data Exchange,Analytics
+AWS,AWS Data Pipeline,App Integration
+AWS,AWS Data Pipeline,Analytics
+AWS,AWS Deep Learning Amazon Machine Images (DLAMI),AI
+AWS,AWS Deep Learning Containers,AI
+AWS,AWS Device Farm,Dev Tools
+AWS,AWS Direct Connect,Networking
+AWS,AWS Directory Service For Microsoft Ad,Security
+AWS,AWS Elastic Beanstalk,Compute
+AWS,AWS Fargate,Container
+AWS,AWS Fault Injection Service (FIS),Dev Tools
+AWS,AWS Firewall Manager,Security
+AWS,AWS Global Accelerator,Networking
+AWS,AWS Glue,App Integration
+AWS,AWS Glue,Analytics
+AWS,AWS Glue,Analytics
+AWS,AWS Glue Data Catalog,Analytics
+AWS,AWS Glue Databrew,Analytics
+AWS,AWS Govcloud,Security
+AWS,AWS Health,Management
+AWS,AWS IOT Analytics,IOT
+AWS,AWS IOT Core,IOT
+AWS,AWS IOT Device Defender,IOT
+AWS,AWS IOT Device Management,IOT
+AWS,AWS IOT Events,IOT
+AWS,AWS IOT Greengrass,IOT
+AWS,AWS IOT Sitewise,IOT
+AWS,AWS IOT Things Graph,IOT
+AWS,AWS IOT Twinmaker,IOT
+AWS,AWS Iam Identity Center,Security
+AWS,AWS Identity And Access Management (IAM),Security
+AWS,AWS Inferentia,AI
+AWS,AWS Inferentia,AI
+AWS,AWS Key Management Service (KMS),Security
+AWS,AWS Lake Formation,Analytics
+AWS,AWS Lake Formation,Analytics
+AWS,AWS Lambda,Compute
+AWS,AWS License Manager,Management
+AWS,AWS Management Console,Management
+AWS,AWS Network Firewall,Security
+AWS,AWS Network Manager,Management
+AWS,AWS Nitro Enclaves,Security
+AWS,AWS Opsworks,Management
+AWS,AWS Organizations,Management
+AWS,AWS Organizations,Management
+AWS,AWS Outposts,Compute
+AWS,AWS Outposts,Management
+AWS,AWS Parallelcluster,Compute
+AWS,AWS Private 5g,Networking
+AWS,AWS Privatelink,Networking
+AWS,AWS Proton,Management
+AWS,AWS Resilience Hub,Storage
+AWS,AWS Resource Access Manager,Security
+AWS,AWS Sdks,Dev Tools
+AWS,AWS Secrets Manager,Security
+AWS,AWS Security Hub,Security
+AWS,AWS Serverless Application Repository,Dev Tools
+AWS,AWS Service Catalog,Management
+AWS,AWS Shield,Security
+AWS,AWS Step Functions,App Integration
+AWS,AWS Tools For Powershell,Dev Tools
+AWS,AWS Trainium,AI
+AWS,AWS Transit Gateway,Networking
+AWS,AWS Trusted Advisor,Cost Controls
+AWS,AWS VPN,Networking
+AWS,AWS Verified Access,Security
+AWS,AWS Wavelength,Networking
+AWS,AWS Web Application Firewall (WAF),Security
+AWS,AWS Well-architected Tool (WA Tool),Cost Controls
+AWS,AWS X-ray,Dev Tools
+AWS,Amazon API Gateway,App Integration
+AWS,Amazon API Gateway,Networking
+AWS,Amazon Appflow,App Integration
+AWS,Amazon Athena,Analytics
+AWS,Amazon Athena,Analytics
+AWS,Amazon Augmented AI (A2I),AI
+AWS,Amazon Aurora,Databases
+AWS,Amazon Bedrock,AI
+AWS,Amazon Braket,Compute
+AWS,Amazon Cloudfront,Networking
+AWS,Amazon Cloudsearch,Analytics
+AWS,Amazon Cloudwatch,Management
+AWS,Amazon Cloudwatch Anomaly Detection,Management
+AWS,Amazon Cloudwatch Logs,Management
+AWS,Amazon Codeguru Security,Cost Controls
+AWS,Amazon Cognito,Security
+AWS,Amazon Cognito,Security
+AWS,Amazon Comprehend,AI
+AWS,Amazon Corretto,Dev Tools
+AWS,Amazon Data Firehose,Analytics
+AWS,Amazon Detective,Security
+AWS,Amazon DocumentDB (with MongoDB compatibility),Databases
+AWS,Amazon Dynamodb,Databases
+AWS,Amazon EC2,Compute
+AWS,Amazon EC2 Dedicated Hosts,Compute
+AWS,Amazon EC2 Reserved Instances (RI),Cost Controls
+AWS,Amazon EC2 Spot Instances,Cost Controls
+AWS,Amazon ECR,Security
+AWS,Amazon ECS Anywhere,Management
+AWS,Amazon EKS Anywhere,Management
+AWS,Amazon EMR,Analytics
+AWS,Amazon EMR,Analytics
+AWS,Amazon EMR Notebooks,AI
+AWS,Amazon EMR Studio,Dev Tools
+AWS,Amazon Elastic Block Store (EBS),Storage
+AWS,Amazon Elastic Compute Cloud (EC2),Compute
+AWS,Amazon Elastic Container Registry (ECR),Container
+AWS,Amazon Elastic Container Service (ECS),Container
+AWS,Amazon Elastic File System (EFS),Storage
+AWS,Amazon Elastic Inference,AI
+AWS,Amazon Elastic Kubernetes Service (EKS),Container
+AWS,Amazon Elasticache,Databases
+AWS,Amazon Eventbridge,App Integration
+AWS,Amazon Eventbridge,Dev Tools
+AWS,Amazon Finspace,Analytics
+AWS,Amazon Forecast,AI
+AWS,Amazon Fraud Detector,AI
+AWS,Amazon Fsx,Storage
+AWS,Amazon Guardduty,Security
+AWS,Amazon Inspector,Security
+AWS,Amazon Kendra,Analytics
+AWS,Amazon Keyspaces (for Apache Cassandra),Databases
+AWS,Amazon Kinesis Data Analytics,Analytics
+AWS,Amazon Kinesis Data Streams,Analytics
+AWS,Amazon Lex,AI
+AWS,Amazon Lightsail,Compute
+AWS,Amazon Lookout For Metrics,Management
+AWS,Amazon Lookout For Vision,AI
+AWS,Amazon Macie,Security
+AWS,Amazon Managed Blockchain (AMB),Databases
+AWS,Amazon Managed Blockchain (AMB),Analytics
+AWS,Amazon Managed Grafana,Analytics
+AWS,Amazon Managed Streaming For Apache Kafka (MSK),Analytics
+AWS,Amazon Managed Workflows For Apache Airflow (MWAA),App Integration
+AWS,Amazon Memorydb,Databases
+AWS,Amazon Mq,App Integration
+AWS,Amazon Neptune,Databases
+AWS,Amazon Opensearch Service,Analytics
+AWS,Amazon Personalize,AI
+AWS,Amazon Polly,AI
+AWS,Amazon Q,AI
+AWS,Amazon Quantum Ledger Database (QLDB),Databases
+AWS,Amazon Quicksight,Analytics
+AWS,Amazon Redshift,Databases
+AWS,Amazon Redshift,Analytics
+AWS,Amazon Redshift,Analytics
+AWS,Amazon Rekognition,AI
+AWS,Amazon Rekognition Video,AI
+AWS,Amazon Relational Database Service (RDS),Databases
+AWS,Amazon Route 53,Networking
+AWS,Amazon S3,Storage
+AWS,Amazon S3 Glacier Deep Archive,Storage
+AWS,Amazon S3 Glacier Flexible Retrieval,Storage
+AWS,Amazon Sagemaker,AI
+AWS,Amazon Sagemaker Data Wrangler,Analytics
+AWS,Amazon Sagemaker Ground Truth,AI
+AWS,Amazon Simple Notification Service (SNS),App Integration
+AWS,Amazon Simple Queue Service (SQS),App Integration
+AWS,Amazon Simple Storage Service (S3),Storage
+AWS,Amazon Simple Workflow Service (SWF),App Integration
+AWS,Amazon Textract,AI
+AWS,Amazon Timestream,Databases
+AWS,Amazon Transcribe,AI
+AWS,Amazon Translate,AI
+AWS,Amazon Virtual Private Cloud (VPC),Networking
+AWS,Amazon Vpc,Networking
+AWS,Amazon Vpc Lattice,Networking
+AWS,Amazon Vpc Nat Gateways,Networking
+AWS,Compute Savings Plans,Cost Controls
+AWS,EC2 Image Builder,Compute
+AWS,EC2 Instance Savings Plans,Cost Controls
+AWS,Elastic Load Balancing (ELB),Networking
+AWS,Ri Reporting,Cost Controls
+AWS,VMware Cloud On AWS,Compute
+AWS,VMware Cloud On AWS,Management
+Azure,AI Anomaly Detector,Management
+Azure,Aks,Container
+Azure,Automl In Azure Machine Learning,AI
+Azure,Autoscale In Azure Monitor,Compute
+Azure,Avere Vfxt For Azure,Storage
+Azure,Azure AI Anomaly Detector,AI
+Azure,Azure AI Bot Service,AI
+Azure,Azure AI Content Safety,AI
+Azure,Azure AI Custom Vision,AI
+Azure,Azure AI Document Intelligence,AI
+Azure,Azure AI Language,AI
+Azure,Azure AI Language Question Answering,AI
+Azure,Azure AI Personalizer,AI
+Azure,Azure AI Search,Analytics
+Azure,Azure AI Speech,AI
+Azure,Azure AI Translator,AI
+Azure,Azure AI Video Indexer,AI
+Azure,Azure AI Vision,AI
+Azure,Azure API Apps,App Integration
+Azure,Azure API Management,App Integration
+Azure,Azure API Management,Networking
+Azure,Azure Active Directory (AD),Security
+Azure,Azure Ad B2c,Security
+Azure,Azure Advisor,Cost Controls
+Azure,Azure App Configuration,Dev Tools
+Azure,Azure App Configuration,Management
+Azure,Azure App Service,Dev Tools
+Azure,Azure App Service,Compute
+Azure,Azure App Service Certificate,Security
+Azure,Azure Application Gateway,Networking
+Azure,Azure Arc,Management
+Azure,Azure Archive Storage,Storage
+Azure,Azure Artifacts,Dev Tools
+Azure,Azure Automation,Management
+Azure,Azure Backup,Storage
+Azure,Azure Batch,Compute
+Azure,Azure Blob Storage,Storage
+Azure,Azure Blueprints,Management
+Azure,Azure Cache For Redis,Databases
+Azure,Azure Cloud Shell,Dev Tools
+Azure,Azure Command-line Interface (CLI),Dev Tools
+Azure,Azure Confidential Computing,Security
+Azure,Azure Container Apps,Container
+Azure,Azure Container Instances (ACI),Container
+Azure,Azure Container Registry,Container
+Azure,Azure Cosmos Db,Databases
+Azure,Azure Cosmos Db,Databases
+Azure,Azure Cosmos Db,Databases
+Azure,Azure Cosmos Db For Apache Gremlin,Databases
+Azure,Azure Cosmos Db For Postgresql,Databases
+Azure,Azure Cyclecloud,Compute
+Azure,Azure DDoS Protection,Security
+Azure,Azure Data Catalog,Security
+Azure,Azure Data Catalog,Analytics
+Azure,Azure Data Explorer,Analytics
+Azure,Azure Data Factory,App Integration
+Azure,Azure Data Factory,Analytics
+Azure,Azure Data Factory,Analytics
+Azure,Azure Data Lake Analytics,Analytics
+Azure,Azure Data Lake Analytics,Analytics
+Azure,Azure Data Lake Storage Gen2,Analytics
+Azure,Azure Data Share,Analytics
+Azure,Azure Database For Mariadb,Databases
+Azure,Azure Databricks,Analytics
+Azure,Azure Dedicated Host,Compute
+Azure,Azure Dedicated Hsm,Security
+Azure,Azure Devops,Dev Tools
+Azure,Azure Digital Twins,IOT
+Azure,Azure Disk Storage,Storage
+Azure,Azure Dns,Networking
+Azure,Azure Event Grid,App Integration
+Azure,Azure Event Hubs And Stream Analytics,AI
+Azure,Azure Event Hubs For Apache Kafka,Analytics
+Azure,Azure Expressroute,Networking
+Azure,Azure Files,Storage
+Azure,Azure Firewall,Security
+Azure,Azure Front Door,Networking
+Azure,Azure Front Door,Networking
+Azure,Azure Functions,Compute
+Azure,Azure Fxt Edge Filer,Compute
+Azure,Azure Fxt Edge Filer,Storage
+Azure,Azure Government,Security
+Azure,Azure Hdinsight,Analytics
+Azure,Azure Hdinsight,Analytics
+Azure,Azure Health Bot,AI
+Azure,Azure Hybrid Benefit,Cost Controls
+Azure,Azure IOT Central,IOT
+Azure,Azure IOT Edge,IOT
+Azure,Azure IOT Hub,IOT
+Azure,Azure Information Protection,Security
+Azure,Azure Key Vault,Security
+Azure,Azure Key Vault,Security
+Azure,Azure Lighthouse,Management
+Azure,Azure Load Balancer,Networking
+Azure,Azure Logic Apps,App Integration
+Azure,Azure Logic Apps,App Integration
+Azure,Azure Logic Apps,Dev Tools
+Azure,Azure Machine Learning,AI
+Azure,Azure Machine Learning Data Labeling,AI
+Azure,Azure Maia 100,AI
+Azure,Azure Managed Applications,Management
+Azure,Azure Management Groups,Management
+Azure,Azure Migrate,Container
+Azure,Azure Mobile Apps,Dev Tools
+Azure,Azure Monitor,Management
+Azure,Azure Monitor Log Analytics,Management
+Azure,Azure Monitor Logs,Management
+Azure,Azure Nat Gateway,Networking
+Azure,Azure Netapp Files,Storage
+Azure,Azure Network Watcher,Management
+Azure,Azure Notebooks,AI
+Azure,Azure Openai Service,AI
+Azure,Azure Openai Service,AI
+Azure,Azure Pipelines,Dev Tools
+Azure,Azure Policy,Management
+Azure,Azure Portal,Management
+Azure,Azure Powershell,Dev Tools
+Azure,Azure Private 5g Core,Networking
+Azure,Azure Private Link,Networking
+Azure,Azure Private Multi-access Edge Compute (MEC),Networking
+Azure,Azure Quantum,Compute
+Azure,Azure Queue Storage,App Integration
+Azure,Azure Repos,Dev Tools
+Azure,Azure Reservations,Cost Controls
+Azure,Azure Resource Health,Management
+Azure,Azure Resource Manager,Security
+Azure,Azure Resource Manager,Management
+Azure,Azure Savings Plans,Cost Controls
+Azure,Azure Sdks,Dev Tools
+Azure,Azure Service Bus,App Integration
+Azure,Azure Service Fabric,Networking
+Azure,Azure Service Health,Management
+Azure,Azure Sphere,IOT
+Azure,Azure Spot Virtual Machines,Cost Controls
+Azure,Azure Sql Database,Databases
+Azure,Azure Stack,Compute
+Azure,Azure Stack,Management
+Azure,Azure Static Web Apps,Dev Tools
+Azure,Azure Stream Analytics,Analytics
+Azure,Azure Synapse Analytics,Analytics
+Azure,Azure Synapse Analytics,Analytics
+Azure,Azure Synapse Analytics,Analytics
+Azure,Azure Synapse Analytics,Analytics
+Azure,Azure Test Plans,Dev Tools
+Azure,Azure Time Series Insights,Databases
+Azure,Azure Traffic Manager,Networking
+Azure,Azure VMware Solution,Compute
+Azure,Azure VPN Gateway,Networking
+Azure,Azure Virtual Machine Scale Sets,Compute
+Azure,Azure Virtual Machines,Compute
+Azure,Azure Virtual Network,Networking
+Azure,Azure Virtual Network Peering,Networking
+Azure,Azure Virtual WAN,Networking
+Azure,Azure Vm Extensions,Management
+Azure,Azure Vm Image Builder,Compute
+Azure,Azure Web Application Firewall (WAF),Security
+Azure,Azure Web Pubsub,App Integration
+Azure,Azure Well-architected Review,Cost Controls
+Azure,Bicep,Management
+Azure,Bing Web Search API,Analytics
+Azure,Customer Lockbox For Microsoft Azure,Security
+Azure,Data Science Virtual Machine (DSVM),AI
+Azure,Dns Service Discovery (DNS-SD),App Integration
+Azure,Gpu Support On Aks,AI
+Azure,Gpu Support On Azure Kubernetes Service (AKS),AI
+Azure,Microsoft Azure Confidential Ledger,Databases
+Azure,Microsoft Billing,Cost Controls
+Azure,Microsoft Cost Management,Cost Controls
+Azure,Microsoft Cost Management,Cost Controls
+Azure,Microsoft Cost Management Analysis And Reporting Feature,Cost Controls
+Azure,Microsoft Defender For Cloud,Security
+Azure,Microsoft Defender For Cloud,Security
+Azure,Microsoft Defender For Cloud,Security
+Azure,Microsoft Defender For Containers,Security
+Azure,Microsoft Defender For IOT,IOT
+Azure,Microsoft Entra Application Proxy,Security
+Azure,Microsoft Entra Domain Services,Security
+Azure,Microsoft Entra External Id,Security
+Azure,Microsoft Entra Single Sign-on,Security
+Azure,Microsoft Graph Data Connect,Analytics
+Azure,Microsoft Purview,Management
+Azure,Microsoft Sentinel,Security
+Azure,Microsoft Service Trust Portal (STP),Security
+Azure,Open Service Mesh (OSM),App Integration
+Azure,Power Bi,Analytics
+Azure,Visual Studio Code (VS Code),Dev Tools
+Azure,Vs,Dev Tools
+Azure,Vs App Center,Dev Tools
+Azure,Vs Code,Dev Tools
+Azure,Xamarin Apps With Azure,Dev Tools
+Google Cloud,API Gateway,App Integration
+Google Cloud,Access Transparency And Access Approval,Security
+Google Cloud,Alloydb For Postgresql,Databases
+Google Cloud,Analytics Hub,Analytics
+Google Cloud,Apigee API Management,App Integration
+Google Cloud,Apigee API Management,Networking
+Google Cloud,Apigee Anomaly Detection,Management
+Google Cloud,App Engine,Compute
+Google Cloud,Application Integration,App Integration
+Google Cloud,Archive Storage In Cloud Storage,Storage
+Google Cloud,Artifact Analysis,Security
+Google Cloud,Artifact Registry,Dev Tools
+Google Cloud,Artifact Registry,Container
+Google Cloud,Assured Workloads,Security
+Google Cloud,Assured Workloads,Security
+Google Cloud,Backup And Dr Service,Storage
+Google Cloud,Batch,Compute
+Google Cloud,Bigquery,Analytics
+Google Cloud,Bigquery,Analytics
+Google Cloud,Bigtable,Databases
+Google Cloud,Bigtable,Databases
+Google Cloud,Bigtable,Databases
+Google Cloud,Binary Authorization,Security
+Google Cloud,Blockchain Node Engine,Databases
+Google Cloud,Certificate Authority Service,Security
+Google Cloud,Cloud Asset Inventory,Management
+Google Cloud,Cloud Audit Logs,Management
+Google Cloud,Cloud Billing,Cost Controls
+Google Cloud,Cloud Billing Budget API,Cost Controls
+Google Cloud,Cloud Build,Dev Tools
+Google Cloud,Cloud Cdn,Networking
+Google Cloud,Cloud Code,Dev Tools
+Google Cloud,Cloud Composer,App Integration
+Google Cloud,Cloud Data Fusion,Analytics
+Google Cloud,Cloud Data Loss Prevention (DLP),Security
+Google Cloud,Cloud Deploy,Dev Tools
+Google Cloud,Cloud Deployment Manager,Management
+Google Cloud,Cloud Dns,Networking
+Google Cloud,Cloud Foundation Toolkit,Management
+Google Cloud,Cloud Hsm,Security
+Google Cloud,Cloud Identity,Security
+Google Cloud,Cloud Interconnect,Networking
+Google Cloud,Cloud Key Management,Security
+Google Cloud,Cloud Load Balancing,Networking
+Google Cloud,Cloud Logging,Management
+Google Cloud,Cloud Monitoring,Management
+Google Cloud,Cloud Monitoring,Management
+Google Cloud,Cloud Nat,Networking
+Google Cloud,Cloud Next Generation Firewall (NGFW),Security
+Google Cloud,Cloud Profiler,Cost Controls
+Google Cloud,Cloud Run,Container
+Google Cloud,Cloud Run Functions,Compute
+Google Cloud,Cloud Scheduler,Dev Tools
+Google Cloud,Cloud Scheduler,Management
+Google Cloud,Cloud Sdk,Dev Tools
+Google Cloud,Cloud Sdk,Dev Tools
+Google Cloud,Cloud Search,Analytics
+Google Cloud,Cloud Service Mesh,App Integration
+Google Cloud,Cloud Service Mesh,Networking
+Google Cloud,Cloud Shell,Dev Tools
+Google Cloud,Cloud Source Repositories,Dev Tools
+Google Cloud,Cloud Spanner,Databases
+Google Cloud,Cloud Sql,Databases
+Google Cloud,Cloud Storage,Storage
+Google Cloud,Cloud Storage,Analytics
+Google Cloud,Cloud Storage For Firebase,Storage
+Google Cloud,Cloud Tasks,App Integration
+Google Cloud,Cloud Tensor Processing Unit (TPU),AI
+Google Cloud,Cloud Tools For Powershell,Dev Tools
+Google Cloud,Cloud Tpu,AI
+Google Cloud,Cloud Trace,Dev Tools
+Google Cloud,Cloud VPN,Networking
+Google Cloud,Cluster Toolkit,Compute
+Google Cloud,Colab Enterprise,AI
+Google Cloud,Committed Use Discounts (CUDs),Cost Controls
+Google Cloud,Compute Engine,Compute
+Google Cloud,Compute Engine Managed Instance Groups (MIGs),Compute
+Google Cloud,Confidential Computing,Security
+Google Cloud,Confluent Cloud,Analytics
+Google Cloud,Cost Management,Cost Controls
+Google Cloud,Cost Management,Cost Controls
+Google Cloud,Cost Management,Cost Controls
+Google Cloud,Data Catalog,Security
+Google Cloud,Dataflow,Analytics
+Google Cloud,Dataflow,Analytics
+Google Cloud,Dataplex,Management
+Google Cloud,Dataplex,Analytics
+Google Cloud,Dataproc,Analytics
+Google Cloud,Dataproc,Analytics
+Google Cloud,Dataproc,Analytics
+Google Cloud,Datashare,Analytics
+Google Cloud,Datastream,Analytics
+Google Cloud,Deep Learning Containers,AI
+Google Cloud,Deep Learning Vm Image,AI
+Google Cloud,Dialogflow,AI
+Google Cloud,Document AI,AI
+Google Cloud,Edge Tpu,IOT
+Google Cloud,Edge Tpu,AI
+Google Cloud,Eventarc,App Integration
+Google Cloud,Filestore,Storage
+Google Cloud,Firebase,Dev Tools
+Google Cloud,Firebase Authentication,Security
+Google Cloud,Firebase Authentication,Security
+Google Cloud,Firebase Crashlytics,Dev Tools
+Google Cloud,Firebase Realtime Database,Databases
+Google Cloud,Firebase Remote Config,Dev Tools
+Google Cloud,Firebase Test Lab,Dev Tools
+Google Cloud,Firestore,Databases
+Google Cloud,Firestore,Databases
+Google Cloud,Forecasting With Automl In Vertex AI,AI
+Google Cloud,Gcloud CLI,Dev Tools
+Google Cloud,Gemini For Google Cloud,AI
+Google Cloud,Google Cloud Architecture Framework,Cost Controls
+Google Cloud,Google Cloud Armor,Security
+Google Cloud,Google Cloud Console,Management
+Google Cloud,Google Cloud Dataprep By Trifacta In Bigquery,Analytics
+Google Cloud,Google Cloud Hyperdisk,Storage
+Google Cloud,Google Cloud Observability,Dev Tools
+Google Cloud,Google Cloud VMware Engine,Compute
+Google Cloud,Google Distributed Cloud,Compute
+Google Cloud,Google Distributed Cloud,Management
+Google Cloud,Google Kubernetes Engine (GKE),Container
+Google Cloud,Identity Platform,Security
+Google Cloud,Identity-aware Proxy (IAP),Security
+Google Cloud,Leverege Connect For Google Cloud,IOT
+Google Cloud,Local Solid-state Drive (SSD),Storage
+Google Cloud,Looker,Analytics
+Google Cloud,Managed Service For Microsoft Ad,Security
+Google Cloud,Media Cdn,Networking
+Google Cloud,Memorystore,Databases
+Google Cloud,Migrate To Containers,Container
+Google Cloud,Natural Language API,AI
+Google Cloud,Neo4j On Google Cloud,Databases
+Google Cloud,Network Connectivity Center,Networking
+Google Cloud,Network Intelligence Center,Management
+Google Cloud,Organization Policy Service,Management
+Google Cloud,Packer Integration In Compute Engine,Compute
+Google Cloud,Persistent Disk,Storage
+Google Cloud,Premium Network Service Tier,Networking
+Google Cloud,Private Service Connect,Networking
+Google Cloud,Pub/sub,App Integration
+Google Cloud,Pub/sub,Analytics
+Google Cloud,Recaptcha Enterprise,AI
+Google Cloud,Recommendations,AI
+Google Cloud,Recommenders,Cost Controls
+Google Cloud,Resource Manager,Security
+Google Cloud,Resource Manager,Management
+Google Cloud,SCC,Security
+Google Cloud,Secret Manager,Security
+Google Cloud,Security Command Center (SCC),Security
+Google Cloud,Service Catalog,Management
+Google Cloud,Service Directory,App Integration
+Google Cloud,Service Directory,Networking
+Google Cloud,Service Directory,Management
+Google Cloud,Sole-tenant Nodes In Compute Engine,Compute
+Google Cloud,Speech-to-text API,AI
+Google Cloud,Spot VMs,Cost Controls
+Google Cloud,Sustained Use Discounts (SUDs),Cost Controls
+Google Cloud,Tensorflow Enterprise,AI
+Google Cloud,Text-to-speech API,AI
+Google Cloud,Timesfm,AI
+Google Cloud,Translation AI,AI
+Google Cloud,Trillium Tpu,AI
+Google Cloud,Vertex AI,AI
+Google Cloud,Vertex AI,AI
+Google Cloud,Vertex AI Data Labeling,AI
+Google Cloud,Vertex AI Workbench,AI
+Google Cloud,Video Intelligence API,AI
+Google Cloud,Virtual Private Cloud (VPC),Networking
+Google Cloud,Vision AI,AI
+Google Cloud,Visual Inspection AI,AI
+Google Cloud,Vm Manager,Management
+Google Cloud,Vpc Network Peering,Networking
+Google Cloud,Web Security Scanner,Security

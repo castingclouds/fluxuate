@@ -1,0 +1,35 @@
+<div class="p-6 bg-white dark:bg-gray-900">
+  <div class="flex justify-between items-center mb-6">
+    <h1 class="text-2xl font-bold text-gray-900 dark:text-white">Cloud Service Details</h1>
+    <div class="space-x-2">
+      <%= link_to 'Edit', edit_cloud_service_path(@cloud_service), data: { turbo_frame: "_top" }, class: 'bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded dark:bg-indigo-600 dark:hover:bg-indigo-800' %>
+      <%= link_to 'Back', cloud_services_path, data: { turbo_frame: "_top" }, class: 'bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded dark:bg-gray-600 dark:hover:bg-gray-800' %>
+    </div>
+  </div>
+
+  <div class="bg-white dark:bg-gray-800 shadow rounded-lg overflow-hidden">
+    <div class="p-6 space-y-6">
+      <div>
+        <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400">Provider</h3>
+        <p class="mt-1 text-lg text-gray-900 dark:text-white"><%= @cloud_service.service_provider %></p>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400">Service Name</h3>
+        <p class="mt-1 text-lg text-gray-900 dark:text-white"><%= @cloud_service.service_name %></p>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400">Category</h3>
+        <p class="mt-1 text-lg text-gray-900 dark:text-white"><%= @cloud_service.service_category %></p>
+      </div>
+    </div>
+
+    <div class="px-6 py-4 bg-gray-50 dark:bg-gray-700 border-t border-gray-200 dark:border-gray-600">
+      <%= button_to 'Delete Service', cloud_service_path(@cloud_service), 
+          method: :delete, 
+          data: { turbo_confirm: 'Are you sure?' }, 
+          class: 'text-red-600 dark:text-red-400 hover:text-red-900 dark:hover:text-red-300 font-medium' %>
+    </div>
+  </div>
+</div>

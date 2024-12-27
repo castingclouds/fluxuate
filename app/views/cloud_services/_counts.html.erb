@@ -1,0 +1,27 @@
+<%= turbo_frame_tag "service-counts" do %>
+  <div class="space-y-4">
+    <div>
+      <h3 class="font-medium text-gray-700 dark:text-gray-300 mb-2">By Provider</h3>
+      <ul class="space-y-1">
+        <% provider_counts.each do |provider, count| %>
+          <li class="flex justify-between items-center text-sm">
+            <span class="truncate flex-1 mr-2 text-gray-900 dark:text-gray-200"><%= provider %></span>
+            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-0.5 rounded-full whitespace-nowrap"><%= count %></span>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-medium text-gray-700 dark:text-gray-300 mb-2">By Category</h3>
+      <ul class="space-y-1">
+        <% category_counts.each do |category, count| %>
+          <li class="flex justify-between items-center text-sm">
+            <span class="truncate flex-1 mr-2 text-gray-900 dark:text-gray-200"><%= category %></span>
+            <span class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-0.5 rounded-full whitespace-nowrap"><%= count %></span>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>

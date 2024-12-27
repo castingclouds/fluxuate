@@ -1,0 +1,6 @@
+﻿"","AWS","Azure","Google Cloud"
+"Container migration","AWS App2Container (A2C)","Azure Migrate","Migrate to Containers"
+"Container registry","Amazon Elastic Container Registry (ECR), AWS CodeArtifact","Azure Container Registry","Artifact Registry"
+"Managed container service","AWS Copilot, Amazon Elastic Container Service (ECS)","Azure Container Apps","N/A"
+"Managed Kubernetes service","Amazon Elastic Kubernetes Service (EKS)","AKS","Google Kubernetes Engine (GKE)"
+"Serverless containers","AWS App Runner, AWS Fargate","Azure Container Instances (ACI)","Cloud Run"

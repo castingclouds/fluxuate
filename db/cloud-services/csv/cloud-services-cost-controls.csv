@@ -1,0 +1,7 @@
+﻿"","AWS","Azure","Google Cloud"
+"Architecture assessment and recommendations","AWS Well-Architected Tool (WA Tool)","Azure Well-Architected Review","Google Cloud Architecture Framework"
+"Billing and budgeting tools","AWS Budgets","Microsoft Billing, Microsoft Cost Management","Cloud Billing, Cloud Billing Budget API, Cost Management"
+"Cloud optimization","Amazon CodeGuru Security, AWS Cost Explorer, AWS Trusted Advisor, AWS Compute Optimizer","Azure Advisor, Microsoft Cost Management","Cloud Profiler, Cost Management, Recommenders"
+"Long-term commitment discount programs","Amazon EC2 Reserved Instances (RI), Compute Savings Plans, EC2 Instance Savings Plans","Azure Hybrid Benefit, Azure Reservations, Azure savings plans","Committed use discounts (CUDs), sustained use discounts (SUDs)"
+"Low-cost, interruptible VMs","Amazon EC2 Spot Instances","Azure Spot Virtual Machines","Spot VMs"
+"Spending tracker and analysis","AWS Cost Anomaly Detection, AWS Cost and Usage Reports (CUR), RI Reporting","Microsoft Cost Management analysis and reporting feature","Cost Management"

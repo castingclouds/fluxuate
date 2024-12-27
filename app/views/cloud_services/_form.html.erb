@@ -1,0 +1,49 @@
+<%= form_with(model: cloud_service, class: "p-6 space-y-6") do |form| %>
+  <% if cloud_service.errors.any? %>
+    <div class="bg-red-50 dark:bg-red-900 p-4 rounded mb-6">
+      <h2 class="text-red-800 dark:text-red-300 font-medium">
+        <%= pluralize(cloud_service.errors.count, "error") %> prohibited this cloud service from being saved:
+      </h2>
+      <ul class="list-disc list-inside mt-2">
+        <% cloud_service.errors.full_messages.each do |message| %>
+          <li class="text-red-600 dark:text-red-400"><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="space-y-2">
+    <%= form.label :service_provider, class: "block text-sm font-medium text-gray-700 dark:text-gray-300" %>
+    <%= form.text_field :service_provider, 
+        class: "mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 
+               text-gray-900 dark:text-gray-100 shadow-sm focus:border-blue-500 dark:focus:border-blue-400 
+               focus:ring-blue-500 dark:focus:ring-blue-400" %>
+  </div>
+
+  <div class="space-y-2">
+    <%= form.label :service_name, class: "block text-sm font-medium text-gray-700 dark:text-gray-300" %>
+    <%= form.text_field :service_name, 
+        class: "mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 
+               text-gray-900 dark:text-gray-100 shadow-sm focus:border-blue-500 dark:focus:border-blue-400 
+               focus:ring-blue-500 dark:focus:ring-blue-400" %>
+  </div>
+
+  <div class="space-y-2">
+    <%= form.label :service_category, class: "block text-sm font-medium text-gray-700 dark:text-gray-300" %>
+    <%= form.text_field :service_category, 
+        class: "mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 
+               text-gray-900 dark:text-gray-100 shadow-sm focus:border-blue-500 dark:focus:border-blue-400 
+               focus:ring-blue-500 dark:focus:ring-blue-400" %>
+  </div>
+
+  <div class="flex justify-end space-x-3 pt-4">
+    <%= link_to 'Cancel', cloud_services_path, 
+        data: { turbo_frame: "_top" },
+        class: "inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-600 
+                text-sm font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 
+                hover:bg-gray-50 dark:hover:bg-gray-600" %>
+    <%= form.submit 'Save Changes', 
+        class: "inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium 
+                rounded-md text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600" %>
+  </div>
+<% end %>
