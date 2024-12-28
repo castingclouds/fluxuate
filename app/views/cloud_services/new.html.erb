@@ -1,5 +1,10 @@
-<div class="max-w-2xl mx-auto p-6">
-  <h1 class="text-2xl font-bold mb-6">New Cloud Service</h1>
-  
-  <%= render 'form', cloud_service: @cloud_service %>
+<div class="max-w-screen-xl mx-auto px-4 py-6">
+  <div class="flex justify-between items-center mb-6">
+    <h1 class="text-2xl font-bold text-gray-900 dark:text-white">New Cloud Service</h1>
+    <%= link_to 'Back', cloud_services_path, data: { turbo_frame: "_top" }, class: 'bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded dark:bg-gray-600 dark:hover:bg-gray-800' %>
+  </div>
+
+  <div class="bg-white dark:bg-gray-800 shadow rounded-lg overflow-hidden">
+    <%= render 'form', cloud_service: @cloud_service %>
+  </div>
 </div>
