@@ -15,6 +15,13 @@ Our design system documentation provides guidelines and components for building 
 7. [Flash Messages](design-system/06-flash-messages.md)
 8. [Navigation](design-system/07-navigation.md)
 
+## JavaScript Integration
+
+Our JavaScript documentation covers Turbo and Stimulus integration:
+
+1. [Turbo Overview](javascript/00-turbo-overview.md)
+2. [Stimulus Patterns](javascript/01-stimulus-patterns.md)
+
 ## Key Features
 
 - Consistent styling with Tailwind CSS
