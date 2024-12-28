@@ -15,6 +15,7 @@ Our design system documentation provides guidelines and components for building 
 7. [Flash Messages](design-system/06-flash-messages.md)
 8. [Navigation](design-system/07-navigation.md)
 9. [Page Layout](design-system/08-page-layout.md)
+10. [Pagination](design-system/09-pagination.md)
 
 ## JavaScript Integration
 
