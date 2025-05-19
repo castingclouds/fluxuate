@@ -10,7 +10,7 @@ if Rails.env.development? || ENV['ALLOW_SEED']
 
   # Create sample users
   puts "Creating sample users..."
-  
+
   # Admin user
   User.create!(
     email: 'admin@example.com',
@@ -19,7 +19,7 @@ if Rails.env.development? || ENV['ALLOW_SEED']
     created_at: 30.days.ago,
     updated_at: 1.day.ago
   )
-  
+
   # Regular users
   users = [
     {
@@ -51,9 +51,9 @@ if Rails.env.development? || ENV['ALLOW_SEED']
       updated_at: 1.hour.ago
     }
   ]
-  
+
   users.each { |user_attrs| User.create!(user_attrs) }
-  
+
   puts "Seeding complete!"
   puts "\nSample users created:"
   puts "- Admin: admin@example.com / password"

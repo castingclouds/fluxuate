@@ -1,6 +1,6 @@
 class Users::SessionsController < Devise::SessionsController
-  layout 'auth'
-  
+  layout "auth"
+
   def new
     super
   end

@@ -1,6 +1,6 @@
 class Users::PasswordsController < Devise::PasswordsController
-  layout 'auth'
-  
+  layout "auth"
+
   def new
     super
   end

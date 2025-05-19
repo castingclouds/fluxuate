@@ -1,6 +1,6 @@
 class Users::RegistrationsController < Devise::RegistrationsController
-  layout 'auth'
-  
+  layout "auth"
+
   def new
     super
   end
