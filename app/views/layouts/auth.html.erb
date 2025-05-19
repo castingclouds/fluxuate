@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : 'Sign in to your Fluxuate account' %>">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <title>Fluxuate - <%= content_for?(:title) ? yield(:title) : 'Authentication' %></title>
+    
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload Google Fonts -->
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
+    
+    <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)">
+    
+    <!-- Initialize theme before content loads to prevent flash of incorrect theme -->
+    <script>
+      // Check for saved theme preference or use system preference
+      const savedTheme = localStorage.getItem('theme')
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+      
+      // Set theme class before content loads
+      if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico">
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= request.original_url %>">
+    <meta property="og:title" content="<%= content_for?(:og_title) ? yield(:og_title) : 'Fluxuate - Authentication' %>">
+    <meta property="og:description" content="<%= content_for?(:og_description) ? yield(:og_description) : 'Sign in to your Fluxuate account' %>"
+    <% if content_for?(:og_image) %>
+      <meta property="og:image" content="<%= yield(:og_image) %>">
+    <% end %>
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="<%= request.original_url %>">
+    <meta name="twitter:title" content="<%= content_for?(:twitter_title) ? yield(:twitter_title) : 'Fluxuate - Authentication' %>">
+    <meta name="twitter:description" content="<%= content_for?(:twitter_description) ? yield(:twitter_description) : 'Sign in to your Fluxuate account' %>"
+    <% if content_for?(:twitter_image) %>
+      <meta name="twitter:image" content="<%= yield(:twitter_image) %>">
+    <% end %>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="<%= request.original_url %>" />
+  </head>
+
+  <body class="min-h-screen flex items-center justify-center p-4 bg-gray-50 dark:bg-gray-900" style="font-family: 'Inter', sans-serif;">
+    <!-- Theme Toggle -->
+    <div class="fixed top-4 right-4 z-50">
+      <button type="button" 
+              class="p-2 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              data-controller="theme"
+              data-action="theme#toggleTheme">
+        <!-- Sun icon (visible in dark mode) -->
+        <svg data-theme-target="sunIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+        <!-- Moon icon (visible in light mode) -->
+        <svg data-theme-target="moonIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+        <span class="sr-only">Toggle dark mode</span>
+      </button>
+    </div>
+    <div>
+      <div class="text-center mb-8">
+        <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Fluxuate</h1>
+        <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">
+          <%= content_for(:subtitle) || 'Welcome back! Please sign in to continue.' %>
+        </p>
+      </div>
+      
+      <!-- Flash messages -->
+      <% flash.each do |type, message| %>
+        <% next if message.blank? %>
+        <% 
+          alert_classes = {
+            'notice' => 'bg-blue-50 border-blue-400',
+            'alert' => 'bg-red-50 border-red-400',
+            'success' => 'bg-green-50 border-green-400',
+            'error' => 'bg-red-50 border-red-400',
+            'warning' => 'bg-yellow-50 border-yellow-400'
+          } 
+          text_classes = {
+            'notice' => 'text-blue-800',
+            'alert' => 'text-red-800',
+            'success' => 'text-green-800',
+            'error' => 'text-red-800',
+            'warning' => 'text-yellow-800'
+          }
+          icon_classes = {
+            'notice' => 'text-blue-400',
+            'alert' => 'text-red-400',
+            'success' => 'text-green-400',
+            'error' => 'text-red-400',
+            'warning' => 'text-yellow-400'
+          }
+          alert_icon = {
+            'notice' => 'M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
+            'alert' => 'M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
+            'success' => 'M5 13l4 4L19 7',
+            'error' => 'M6 18L18 6M6 6l12 12',
+            'warning' => 'M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z'
+          }
+          alert_type = type == 'notice' ? 'success' : (type == 'alert' ? 'error' : type)
+          alert_class = alert_classes[alert_type] || alert_classes['notice']
+          text_class = text_classes[alert_type] || text_classes['notice']
+          icon_class = icon_classes[alert_type] || icon_classes['notice']
+          icon_path = alert_icon[alert_type] || alert_icon['notice']
+        %>
+        <div class="<%= alert_class %> border-l-4 rounded-r p-4 mb-4 shadow-sm" data-controller="flash">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <svg class="h-5 w-5 <%= icon_class %>" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="<%= icon_path %>" />
+              </svg>
+            </div>
+            <div class="ml-3">
+              <p class="text-sm font-medium <%= text_class %>">
+                <%= message %>
+              </p>
+            </div>
+            <div class="ml-auto pl-3">
+              <div class="-mx-1.5 -my-1.5">
+                <button type="button" class="inline-flex rounded-md p-1.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-50 focus:ring-green-600" data-action="click->flash#dismiss">
+                  <span class="sr-only">Dismiss</span>
+                  <svg class="h-5 w-5 text-gray-400 hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      
+      <div class="">
+        <%= yield %>
+      </div>
+      
+      <div class="mt-6 text-center text-sm">
+        <div class="space-y-2">
+          <% if controller_name != 'sessions' %>
+            <%= link_to "Sign in", new_session_path(resource_name), class: "font-medium text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300 block" %>
+          <% end %>
+          
+          <% if devise_mapping.registerable? && controller_name != 'registrations' %>
+            <%= link_to "Create an account", new_registration_path(resource_name), class: "font-medium text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300 block" %>
+          <% end %>
+          
+          <% if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+            <%= link_to "Forgot your password?", new_password_path(resource_name), class: "font-medium text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300 block" %>
+          <% end %>
+          
+          <% if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+            <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name), class: "font-medium text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300 block text-xs" %>
+          <% end %>
+          
+          <% if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+            <%= link_to "Didn't receive unlock instructions?", new_unlock_path(resource_name), class: "font-medium text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300 block text-xs" %>
+          <% end %>
+        </div>
+        
+        <!-- Back to home link -->
+        <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+          <%= link_to root_path, class: "text-sm font-medium text-gray-600 hover:text-gray-500 dark:text-gray-400 dark:hover:text-gray-300 flex items-center justify-center" do %>
+            <svg class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            Back to home
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
